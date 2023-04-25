@@ -39,3 +39,29 @@ START
 10. Print the value of 'result'.
 	- If 'result' is still -1, then the input number was not found in the array.
 STOP
+
+## Linear Search
+This program searches for an input integer in an array of integers using linear search. 
+It checks if the input number is greater than the last element of the array and exits early if it is.
+Otherwise, it iterates through the array elements one by one until it finds a match or reaches the end of the array. 
+If the input number is found, it prints the index of the element where the number is found, and if it is not found, it prints "not found".
+![Screenshot (296)](https://user-images.githubusercontent.com/125993593/234350796-996dbadb-e072-4f3f-a742-4243adc1e20e.png)
+### Algorithm
+Start:
+
+Define an integer array 'arr' with 5 values: 1, 2, 4, 8, and 10.
+
+Prompt the user to enter a number to search for and read the input from the user into the variable 'n'.
+
+If 'n' is greater than the last element of the array (i.e., arr(4)), print "not found" and exit.
+
+Otherwise, initialize an integer variable 'i' to 0.
+
+Repeat the following steps while 'i' is less than 5:
+a. If 'n' is equal to the current element 'arr(i)', print "found at i" and exit.
+b. Otherwise, increment 'i' by 1.
+
+If the loop completes without finding 'n', print "not found".
+
+Stop.
+
